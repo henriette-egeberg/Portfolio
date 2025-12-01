@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/main.css" />
+		<title>Portfolio</title>
+	</head>
+	<body>
+		<!-- Toggle button for opening/closing the sidebar -->
+		<button id="sidebarToggle" class="toggle-button" aria-expanded="true" aria-controls="sidebar">☰</button>
+		<nav id="navbar" class="navbar">
+			<ul>
+				<li><a href="#about">About me</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<section id="sidebar" class="sidebar">
+			<div>
+				<img src="" alt="" />
+				<p></p>
+			</div>
+			<div>
+				<h3>My Journey</h3>
+				<ul>
+					<li>Adecco</li>
+					<li>SSP</li>
+					<li>Thon Hotels</li>
+					<li>Aanerud</li>
+					<li>Kanmer</li>
+					<li>Asker Product</li>
+				</ul>
+			</div>
+			<div>
+				<h3>Technical Skills</h3>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JS</li>
+					<li>Github</li>
+					<li>UI Design</li>
+					<li>Version Control</li>
+					<li>SEO</li>
+				</ul>
+			</div>
+		</section>
+		<section class="main-content">
+			<h1>Front End Developer</h1>
+			<h3>Henriette Egeberg Kristensen</h3>
+			<div>
+				<h2>About Me</h2>
+				<p>
+					I’m a Front-End Developer specializing in helping small and newly opened businesses in the food industry establish a strong online presence. With experience as a pastry chef, waitress, and
+					across multiple service roles, I understand your industry from the inside — and I use that insight to craft websites that fit your business perfectly.
+				</p>
+				<a href="">*Cover letter*</a>
+				<a href="">*CV*</a>
+			</div>
+			<div>
+				<h2>Projects</h2>
+				<article>
+					<div>
+						<h4>Project Title</h4>
+						<p>This is a very short description to describe the website presented in this thumbnail thig</p>
+						<a href="">*Github Link*</a>
+						<a href="">*Demo Link*</a>
+					</div>
+					<div>
+						<img src="" alt="200kb-thumbnail" />
+					</div>
+				</article>
+				<article>
+					<div>
+						<h4>Project Title</h4>
+						<p>This is a very short description to describe the website presented in this thumbnail thig</p>
+						<a href="">*Github Link*</a>
+						<a href="">*Demo Link*</a>
+					</div>
+					<div>
+						<img src="" alt="200kb-thumbnail" />
+					</div>
+				</article>
+				<article>
+					<div>
+						<h4>Project Title</h4>
+						<p>This is a very short description to describe the website presented in this thumbnail thig</p>
+						<a href="">*Github Link*</a>
+						<a href="">*Demo Link*</a>
+					</div>
+					<div>
+						<img src="" alt="200kb-thumbnail" />
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<script>
+			// Toggle sidebar
+			(function () {
+				var btn = document.getElementById("sidebarToggle");
+				if (!btn) return;
+				btn.addEventListener("click", function () {
+					document.body.classList.toggle("sidebar-closed");
+					var expanded = !document.body.classList.contains("sidebar-closed");
+					btn.setAttribute("aria-expanded", String(expanded));
+				});
+			})();
+		</script>
+	</body>
+</html>

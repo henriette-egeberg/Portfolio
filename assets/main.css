@@ -272,32 +272,21 @@ footer {
 @media only screen and (max-width: 1200px) {
 	h1 {
 		font-size: 44px;
-		font-weight: 500;
 	}
 	h2 {
 		font-size: 38px;
-		font-weight: 400;
 	}
 	h3 {
 		font-size: 30px;
-		font-weight: 300;
 	}
 	h4 {
 		font-size: 22px;
-		font-weight: 300;
 	}
-	h5 {
-		font-size: 16px;
-		font-weight: 500;
-	}
+	h5,
 	p.sm {
 		font-size: 16px;
-		font-weight: 200;
 	}
-	p.lg {
-		font-size: 18px;
-		font-weight: 400;
-	}
+	p.lg,
 	a.sm {
 		font-size: 18px;
 	}
@@ -367,32 +356,17 @@ footer {
 @media only screen and (max-width: 992px) {
 	h1 {
 		font-size: 42px;
-		font-weight: 500;
 	}
 	h2 {
 		font-size: 36px;
-		font-weight: 400;
 	}
 	h3 {
 		font-size: 28px;
-		font-weight: 300;
 	}
 	h4 {
 		font-size: 20px;
-		font-weight: 300;
 	}
-	h5 {
-		font-size: 16px;
-		font-weight: 500;
-	}
-	p.sm {
-		font-size: 16px;
-		font-weight: 200;
-	}
-	p.lg {
-		font-size: 16px;
-		font-weight: 400;
-	}
+	p.lg,
 	a.sm {
 		font-size: 16px;
 	}
@@ -419,44 +393,21 @@ footer {
 @media only screen and (max-width: 768px) {
 	h1 {
 		font-size: 40px;
-		font-weight: 500;
 	}
 	h2 {
 		font-size: 34px;
-		font-weight: 400;
 	}
 	h3 {
 		font-size: 26px;
-		font-weight: 300;
 	}
-	h4 {
-		font-size: 18px;
-		font-weight: 300;
-	}
-	h5 {
-		font-size: 16px;
-		font-weight: 500;
-	}
-	p.sm {
-		font-size: 16px;
-		font-weight: 200;
-	}
-	p.lg {
-		font-size: 16px;
-		font-weight: 400;
-	}
-	a.sm {
-		font-size: 16px;
-	}
+	h4,
 	a.lg {
 		font-size: 18px;
 	}
 
 	article {
-		.thumbnail {
-			img {
-				display: none;
-			}
+		img {
+			display: none;
 		}
 	}
 	body {
@@ -484,40 +435,6 @@ footer {
 	}
 }
 @media only screen and (max-width: 600px) {
-	h1 {
-		font-size: 40px;
-		font-weight: 500;
-	}
-	h2 {
-		font-size: 34px;
-		font-weight: 400;
-	}
-	h3 {
-		font-size: 26px;
-		font-weight: 300;
-	}
-	h4 {
-		font-size: 18px;
-		font-weight: 300;
-	}
-	h5 {
-		font-size: 16px;
-		font-weight: 500;
-	}
-	p.sm {
-		font-size: 16px;
-		font-weight: 200;
-	}
-	p.lg {
-		font-size: 16px;
-		font-weight: 400;
-	}
-	a.sm {
-		font-size: 16px;
-	}
-	a.lg {
-		font-size: 18px;
-	}
 	/* Make the layout single-column on very small screens */
 	body {
 		grid-template-columns: 1fr;
@@ -553,6 +470,7 @@ footer {
 	/* Navbar should span full width on small screens */
 	.navbar {
 		width: 100%;
+		padding-left: 32px;
 		right: 0;
 	}
 

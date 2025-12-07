@@ -8,6 +8,10 @@ a {
 	text-decoration: none;
 	display: block;
 }
+a:hover {
+	transform: scale(1.02);
+	text-decoration: underline;
+}
 a:first-of-type {
 	margin-top: 16px;
 }
